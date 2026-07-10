@@ -1,0 +1,17 @@
+# ── Kompiliertes PDF: einkommentieren, wenn das PDF NICHT im Repo gespeichert
+# werden soll (z. B. bei CI/CD). Standard: PDF wird versioniert.
+# *.pdf
+
+# ── Editor / Betriebssystem ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+._*
+
+# ── R ────────────────────────────────────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+
+# .vscode/ ist Projekt-Konfiguration und wird NICHT ignoriert.

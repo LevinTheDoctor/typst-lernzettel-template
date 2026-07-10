@@ -1,0 +1,15 @@
+{
+  // Tinymist = Typst-Language-Server (Vorschau, Autocomplete, Formatierung)
+  // Installation: code --install-extension myriad-dreamin.tinymist
+  "tinymist.formatterMode": "typstyle",
+  "tinymist.exportPdf": "onSave",
+  "tinymist.outputPath": "$root/$name",
+
+  "[typst]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": false
+  },
+  "files.associations": {
+    "*.typ": "typst"
+  }
+}
