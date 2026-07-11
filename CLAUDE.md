@@ -9,6 +9,7 @@ Projektsprache (Inhalte, Kommentare, Commits).
 typst compile main.typ   # → main.pdf (oder: make build)
 typst watch main.typ     # Live-Rebuild (oder: make watch)
 make r                   # R-Skripte ausführen → assets/ (benötigt Rscript)
+make cheatsheet          # Befehls-Cheat-Sheet → cheatsheet.pdf
 ```
 
 Erwartung: Kompilierung läuft ohne Fehler durch. Die Warnung
@@ -29,6 +30,9 @@ Erwartung: Kompilierung läuft ohne Fehler durch. Die Warnung
   (Titel-Chip via `place()` über der Box-Oberkante).
 - `content/doku.typ` — zeigt jede Komponente; bei Änderungen am Baukasten
   mitpflegen.
+- `cheatsheet.typ` — eigenständiges, druckbares Befehls-Cheat-Sheet
+  (nutzt components + colormeta, aber NICHT lib/template.typ); bei
+  Baukasten-Änderungen ebenfalls mitpflegen.
 - `r/*.R` — nur base R verwenden (keine Paket-Installationspflicht).
   Skripte werden im Repo-Root ausgeführt, Pfade relativ dazu.
 

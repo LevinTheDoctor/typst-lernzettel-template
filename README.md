@@ -71,6 +71,9 @@ make watch
 
 # R-Skripte ausführen (Plots/Daten nach assets/) und danach bauen
 make all
+
+# Druckbares Befehls-Cheat-Sheet → cheatsheet.pdf
+make cheatsheet
 ```
 
 ---
@@ -170,6 +173,9 @@ def hello():
 ```
 ````
 
+> 🖨️ **Zum Ausdrucken:** [`cheatsheet.pdf`](cheatsheet.pdf) — alle Befehle
+> mit Code und gerendertem Ergebnis auf zwei Seiten (`make cheatsheet`).
+
 ---
 
 ## R-Anbindung
@@ -226,6 +232,7 @@ Die Projekt-Einstellungen liegen in `.vscode/settings.json`
 ```
 typst-lernzettel-template/
 ├── main.typ                  ← Einstiegspunkt (Kapitel hier einbinden)
+├── cheatsheet.typ            ← druckbares Befehls-Cheat-Sheet
 ├── config/
 │   ├── usermeta.typ          ← Autor, Kurs, Matrikelnummer
 │   ├── topicmeta.typ         ← Titel, Fach, Beschreibung
