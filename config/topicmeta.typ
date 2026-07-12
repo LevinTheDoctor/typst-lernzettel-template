@@ -2,7 +2,7 @@
 // Hier Titel, Untertitel, Fach und Beschreibung eintragen.
 // ─────────────────────────────────────────────────────────────────────────────
 
-#let doctitle       = "Grundlagen der Algorithmen"
+#let doctitle       = "Quatitative Methoden der Informatik"
 #let docsubtitle    = "Zusammenfassung und Lernzettel"
-#let docsubject     = "Algorithmen und Datenstrukturen"
+#let docsubject     = "Statstik, R und Taschenrechner in der Klausur"
 #let docdescription = "Kompakte Zusammenfassung der Vorlesungsinhalte für die Prüfungsvorbereitung."
