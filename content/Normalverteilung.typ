@@ -1,14 +1,14 @@
 #import "../lib/components.typ": *
 = Normalverteilung
-#infobox(title: [Zentraer Grenzwertsatz])[Fast jeder Mittelwert eine x-beliebigen Verteilung – stetig oder diskret – folgt der Normalverteilung.]
-Die Normavertilung wird auch Gauße-Verteilung bzw. auch Glocken Kurve gennant. Der Grund wieso die Glockenkurve sogennat wird kann man an dem Plot Gut Erkennen.
+#infobox(title: [Zentraler Grenzwertsatz])[Fast jeder Mittelwert einer x-beliebigen Verteilung – stetig oder diskret – folgt der Normalverteilung.]
+Die Normalverteilung wird auch Gauß-Verteilung bzw. Glockenkurve genannt. Der Grund, warum sie so genannt wird, ist am Plot gut zu erkennen.
 #figure(
   image("../assets/images/Normalverteilung.png", width: 70%),
   caption: [Normalverteilung]
 )<Normalverteilung>
-Die Normalverteilung hängt von dem Erwatungswert µ – bzw. Der Mittelwert – welcher die Kurve nach links oder Rechts verscheibt und der Varianz $sigma^2$ welche einfluss auf die Form der Kurve hat, entweder ist Gesteckt oder gestaucht. 
-== Rechne mit der Normal Verteilung
-#warnbox(title:[Warnung])[Für die Normalverteilung gibt es eignetlich zwei wichtige funktionen um eine Wahrschlich keit aus zurechenen. Die mussen wir nich können! ich liste sie nur der vollstand keits halber auf ist ja nice to know]
+Die Normalverteilung hängt vom Erwartungswert µ – bzw. dem Mittelwert – und von der Varianz $sigma^2$ ab. Der Erwartungswert verschiebt die Kurve nach links oder rechts, die Varianz beeinflusst die Form der Kurve: Sie ist entweder gestreckt oder gestaucht.
+== Rechnen mit der Normalverteilung
+#warnbox(title: [Warnung])[Für die Normalverteilung gibt es eigentlich zwei wichtige Funktionen, um eine Wahrscheinlichkeit auszurechnen. Die müssen wir nicht können! Ich liste sie nur der Vollständigkeit halber auf – ist ja nice to know.]
 \ *Dichtefunktion* \
 Die Dichtefunktion beschreibt, wie dicht die Wahrscheinlichkeit an einer bestimmten Stelle x verteilt ist. Bildlich gesprochen: die Höhe der Glockenkurve an dieser Stelle.\
 $ f(x)=1/sqrt(2 pi sigma^2) e^(-(x-mu)^2 / (2 sigma^2)) $
@@ -17,17 +17,17 @@ $ f(x)=1/sqrt(2 pi sigma^2) e^(-(x-mu)^2 / (2 sigma^2)) $
 Die Verteilungsfunktion gibt dir direkt die kumulierte Wahrscheinlichkeit P(X ≤ x) an, also die gesamte Fläche unter der Dichtekurve von minus unendlich bis zu diesem Punkt x.\
 $ F(x) = integral_(-infinity)^x 1/sqrt(2 pi sigma^2) e^(-(u-mu)^2 / (2 sigma^2)) dif u $
 \ *z-Transformation*\
-Damit wir diese Formeln Lernen mussen gibt es die Transformation funktion hier wird eine belibeige verteilung in eine veretilung mit $sigma = 1 "und" µ = 0$ Tranformiert die fromel ist für uns wichtig da wir dadurch die Normalverteilung Tabbele nutzen können. 
+Damit wir diese Formeln nicht lernen müssen, gibt es die Transformationsfunktion. Hier wird eine beliebige Verteilung in eine Verteilung mit $sigma = 1 "und" µ = 0$ transformiert. Die Formel ist für uns wichtig, da wir dadurch die Normalverteilungstabelle nutzen können.
 \ $ z = (x-µ)/sigma $ \
-Das Ergebnis der z-Transformation können wir dann durch ein Plot wie folgt darstellen.
+Das Ergebnis der z-Transformation können wir dann durch einen Plot wie folgt darstellen.
 #figure(
   image("../assets/images/NormalverteilungWahrschlichkeit.png", width: 70%),
   caption: [Wahrscheinlichkeit bei Normalverteilung]
 )<Wahrscheinlichkeit_bei_Normalverteilung>
 #pagebreak()
-== Normalverteilung–Tabbele
-Die Normalverteilung Tabbele wird uns in der Klausur bereit gestellt. Ich füre es nur noch mal auf.
-\ *Negativen wert berechnen* \
+== Normalverteilungstabelle
+Die Normalverteilungstabelle wird uns in der Klausur bereitgestellt. Ich führe sie nur noch mal auf.
+\ *Negativen Wert berechnen* \
 $Phi(-u)=1-Phi(u)$
 \ *Tabelle*
 // Kopfzeile: die Nachkommastelle (zweite Stelle von u)

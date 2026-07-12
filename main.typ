@@ -26,3 +26,5 @@
 #include "content/Grundbegriffe.typ"
 #include "content/DeskriptiveStatstik.typ"
 #include "content/Normalverteilung.typ"
+#include "content/Inferenzstatistik.typ"
+#include "content/Taschenrechner.typ"

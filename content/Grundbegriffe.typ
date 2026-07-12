@@ -1,6 +1,6 @@
 #import "../lib/components.typ": *
 = Grundbegriffe
-#infobox(title: [Informationen Vorab])[
+#infobox(title: [Informationen vorab])[
 Dies ist eine Sammlung von Begriffen, die uns im Studium immer wieder begegnen werden, also nicht nur für die Klausur in Quantitative Methoden der Informatik. Für die Personen, welche die Probeklausuren nicht kennen: In der Klausur werden insbesondere die *Gütekriterien* und *Stichprobe* eine Rolle spielen.
 ]
 == Hypothese

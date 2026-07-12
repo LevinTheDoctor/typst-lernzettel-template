@@ -50,8 +50,8 @@ $ Q_3 = cases(
   1/2 dot (x_((0.75 dot n)) + x_((0.75 dot n + 1))) &"falls" 0.75 dot n in ZZ,
 ) $
 
-== Streuungsmaß
-== Spannweite
+== Streuungsmaße
+=== Spannweite
 Der Abstand zwischen dem kleinsten und dem größten Wert.
 === Interquartilsabstand – IQR
 $ "IQR" = Q_3 - Q_1 $
@@ -69,16 +69,16 @@ $ S^2 = (sum_(i=1)^n (x_i - "Mittelwert")^2)/n $
 Kann auch mit $sigma^2$ dargestellt werden.
 #pagebreak()
 == Zusammenhangsmaße
-=== Koleration
-Eine Korrelation beschreibt eine Beziehung zwischen zwei oder mehreren Merkmalen, Zuständen oder Funktionen. 
+=== Korrelation
+Eine Korrelation beschreibt eine Beziehung zwischen zwei oder mehreren Merkmalen, Zuständen oder Funktionen.
 #figure(
   image("../assets/images/Kolleration.png"),
-  caption: [Koleration]
+  caption: [Korrelation]
 ) <koleration>
 === Kovarianz
-Misst, wie zwei Variablen gemeinsam um ihren Mittelwert streuen (positiv = gleichlaeug, negativ = gegenläufig).
+Misst, wie zwei Variablen gemeinsam um ihren Mittelwert streuen (positiv = gleichläufig, negativ = gegenläufig).
 === r-Wert – Korrelationskoeffizient
-Der Korrelationskoezient *r* misst Staerke und Richtung eines linearen Zusammenhangs zweier metrischer Variablen, −1 ≤r ≤+1. Der Betrag |r|gibt die Stärke an (nahe 1 stark, nahe 0 schwach), das Vorzeichen die Richtung.
+Der Korrelationskoeffizient *r* misst Stärke und Richtung eines linearen Zusammenhangs zweier metrischer Variablen, −1 ≤ r ≤ +1. Der Betrag |r| gibt die Stärke an (nahe 1 stark, nahe 0 schwach), das Vorzeichen die Richtung.
 #pagebreak()
 == Diagramme
 === Box-Plot
