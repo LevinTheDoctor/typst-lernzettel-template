@@ -15,3 +15,4 @@ Thumbs.db
 .Rproj.user/
 
 # .vscode/ ist Projekt-Konfiguration und wird NICHT ignoriert.
+.Rproj.user

@@ -25,3 +25,4 @@
 // Neues Kapitel hinzufügen: Datei in content/ anlegen und hier einbinden.
 #include "content/Grundbegriffe.typ"
 #include "content/DeskriptiveStatstik.typ"
+#include "content/Normalverteilung.typ"
