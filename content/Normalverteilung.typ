@@ -7,12 +7,12 @@ Die Normalverteilung wird auch Gauß-Verteilung bzw. Glockenkurve genannt. Der G
   caption: [Normalverteilung]
 )<Normalverteilung>
 Die Normalverteilung hängt vom Erwartungswert µ – bzw. dem Mittelwert – und von der Varianz $sigma^2$ ab. Der Erwartungswert verschiebt die Kurve nach links oder rechts, die Varianz beeinflusst die Form der Kurve: Sie ist entweder gestreckt oder gestaucht.
+#pagebreak()
 == Rechnen mit der Normalverteilung
 #warnbox(title: [Warnung])[Für die Normalverteilung gibt es eigentlich zwei wichtige Funktionen, um eine Wahrscheinlichkeit auszurechnen. Die müssen wir nicht können! Ich liste sie nur der Vollständigkeit halber auf – ist ja nice to know.]
 \ *Dichtefunktion* \
 Die Dichtefunktion beschreibt, wie dicht die Wahrscheinlichkeit an einer bestimmten Stelle x verteilt ist. Bildlich gesprochen: die Höhe der Glockenkurve an dieser Stelle.\
 $ f(x)=1/sqrt(2 pi sigma^2) e^(-(x-mu)^2 / (2 sigma^2)) $
-#pagebreak()
  *Verteilungsfunktion* \
 Die Verteilungsfunktion gibt dir direkt die kumulierte Wahrscheinlichkeit P(X ≤ x) an, also die gesamte Fläche unter der Dichtekurve von minus unendlich bis zu diesem Punkt x.\
 $ F(x) = integral_(-infinity)^x 1/sqrt(2 pi sigma^2) e^(-(u-mu)^2 / (2 sigma^2)) dif u $
@@ -21,7 +21,7 @@ Damit wir diese Formeln nicht lernen müssen, gibt es die Transformationsfunktio
 \ $ z = (x-µ)/sigma $ \
 Das Ergebnis der z-Transformation können wir dann durch einen Plot wie folgt darstellen.
 #figure(
-  image("../assets/images/NormalverteilungWahrschlichkeit.png", width: 70%),
+  image("../assets/images/NormalverteilungWahrschlichkeit.png", width: 60%),
   caption: [Wahrscheinlichkeit bei Normalverteilung]
 )<Wahrscheinlichkeit_bei_Normalverteilung>
 #pagebreak()
