@@ -25,6 +25,8 @@
 // Neues Kapitel hinzufügen: Datei in content/ anlegen und hier einbinden.
 #include "content/Grundbegriffe.typ"
 #include "content/DeskriptiveStatstik.typ"
+#include "content/ZufallsVaraiblen.typ"
 #include "content/Normalverteilung.typ"
 #include "content/Inferenzstatistik.typ"
+#include "content/r.typ"
 #include "content/Taschenrechner.typ"

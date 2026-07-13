@@ -1,0 +1,2 @@
+= R 
+R ist eine Programmiersprache, die speziell für Statistik und Datenvisualisierung ausgelegt ist, insbesondere durch Bibliotheken wie ggplot2. R ist kostenlos, Open Source und steht unter einer GNU-Lizenz. Als Entwicklungsumgebung kann man RStudio nutzen, da es viele nützliche Features für R mitliefert; allerdings klappt die Arbeit über Extensions auch in VS Code oder Google Colab. R ist eine interpretierte Sprache, die prozedural sowie funktional geschrieben wird, aber auch Objektorientierung unterstützt. R gibt es seit 1993.
