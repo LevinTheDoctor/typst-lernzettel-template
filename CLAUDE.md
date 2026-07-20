@@ -6,9 +6,10 @@ Projektsprache (Inhalte, Kommentare, Commits).
 ## Build
 
 ```bash
-typst compile main.typ   # → main.pdf (oder: make build)
-typst watch main.typ     # Live-Rebuild (oder: make watch)
-make r                   # R-Skripte ausführen → assets/ (benötigt Rscript)
+typst compile main.typ            # → main.pdf (oder: make build)
+typst watch main.typ              # Live-Rebuild (oder: make watch)
+typst compile formelsammlung.typ  # → formelsammlung.pdf (oder: make formelsammlung)
+make r                            # R-Skripte ausführen → assets/ (benötigt Rscript)
 ```
 
 Erwartung: Kompilierung läuft ohne Fehler durch. Die Warnung
@@ -29,6 +30,12 @@ Erwartung: Kompilierung läuft ohne Fehler durch. Die Warnung
   (Titel-Chip via `place()` über der Box-Oberkante).
 - `content/doku.typ` — zeigt jede Komponente; bei Änderungen am Baukasten
   mitpflegen.
+- `content/Formelsammlung.typ` — bündelt sämtliche Formeln + Normalverteilungs-
+  tabelle. Einzige Quelle: in `main.typ` als Kapitel eingebunden UND von
+  `formelsammlung.typ` als eigenständiges PDF gerendert.
+- `formelsammlung.typ` — Standalone-Einstiegspunkt für `formelsammlung.pdf`
+  (ohne Titelseite/TOC, Styling spiegelt `lib/template.typ`); nutzt NICHT
+  `lernzettel()`. Bei Änderungen an den Überschriften-Regeln mitpflegen.
 - `r/*.R` — nur base R verwenden (keine Paket-Installationspflicht).
   Skripte werden im Repo-Root ausgeführt, Pfade relativ dazu.
 

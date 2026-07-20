@@ -5,7 +5,7 @@
 MAIN  := main
 TYPST := typst
 
-.PHONY: all build watch r clean help
+.PHONY: all build watch r formelsammlung clean help
 
 ## Standardziel: R-Assets erzeugen + kompilieren
 all: r build
@@ -13,6 +13,10 @@ all: r build
 ## Einmaliger Build (main.pdf)
 build:
 	$(TYPST) compile $(MAIN).typ
+
+## Eigenständige Formelsammlung als separates PDF (formelsammlung.pdf)
+formelsammlung:
+	$(TYPST) compile formelsammlung.typ
 
 ## Kontinuierlicher Rebuild bei Dateiänderungen (Ctrl+C zum Stoppen)
 watch:
@@ -25,16 +29,17 @@ r:
 		Rscript "$$skript"; \
 	done
 
-## Kompiliertes PDF löschen
+## Kompilierte PDFs löschen
 clean:
-	rm -f $(MAIN).pdf
+	rm -f $(MAIN).pdf formelsammlung.pdf
 
 ## Hilfe
 help:
 	@echo ""
-	@echo "  make build   Einmaliger Kompilierlauf (main.pdf)"
-	@echo "  make watch   Automatischer Rebuild bei Dateiänderungen"
-	@echo "  make r       R-Skripte ausführen (Plots/Daten nach assets/)"
-	@echo "  make all     make r + make build"
-	@echo "  make clean   main.pdf löschen"
+	@echo "  make build           Einmaliger Kompilierlauf (main.pdf)"
+	@echo "  make watch           Automatischer Rebuild bei Dateiänderungen"
+	@echo "  make formelsammlung  Eigenständige Formelsammlung (formelsammlung.pdf)"
+	@echo "  make r               R-Skripte ausführen (Plots/Daten nach assets/)"
+	@echo "  make all             make r + make build"
+	@echo "  make clean           PDFs löschen"
 	@echo ""
