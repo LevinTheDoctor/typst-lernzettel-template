@@ -30,3 +30,4 @@
 #include "content/Inferenzstatistik.typ"
 #include "content/r.typ"
 #include "content/Taschenrechner.typ"
+#include "content/Formelsammlung.typ"
