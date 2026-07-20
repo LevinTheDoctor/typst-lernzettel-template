@@ -73,6 +73,16 @@ $ r = S_(x y) / (S_x dot S_y) $
   [negative $u$-Werte aus der Tabelle bestimmen],
 )
 
+Je nachdem, ob $z$ positiv oder negativ ist und ob $P(Z <= z)$ oder
+$P(Z >= z)$ gesucht wird, liest man den Wert so aus der Tabelle ab:
+
+#stdtable(
+  columns: (auto, 1fr, 1fr),
+  header: ([Gesucht], [$z$ ist positiv], [$z$ ist negativ]),
+  [$P(Z <= z)$], [$Phi(z)$ — direkt ablesen], [$1 - Phi(abs(z))$],
+  [$P(Z >= z)$], [$1 - Phi(z)$], [$Phi(abs(z))$ — direkt ablesen],
+)
+
 #warnbox(title: [Nur zur Vollständigkeit])[
   Die folgenden beiden Funktionen müssen wir *nicht* auswendig können — dafür
   gibt es die $z$-Transformation und die Tabelle.
